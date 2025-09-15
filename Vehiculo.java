@@ -34,5 +34,4 @@ public class Vehiculo{
     public int getconsumoCombustible () {
         return consubmoCombustible;
     }
-
 }

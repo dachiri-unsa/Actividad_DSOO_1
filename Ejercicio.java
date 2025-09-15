@@ -3,10 +3,10 @@ public class Ejercicio {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         int opcion;
-
-        System.out.println("Bienvenido a la Sistema de vehiculos de transporte: ");
-        while (true){
-            System.out.println("Seleccione una opcion:\n1) Añadir vehiculo\n2) Añadir chofer\n3) Escoger viaje");
+        boolean bucle = true;
+        System.out.println("Bienvenido a la Sistema de vehiculos de transporte");
+        while (bucle){
+            System.out.println("Seleccione una opcion:\n1) Añadir vehiculo\n2) Añadir chofer\n3) Escoger viaje\n0) Cerrar");
             opcion = sc.nextInt();
             switch (opcion) {
                 case 1:
@@ -17,11 +17,15 @@ public class Ejercicio {
                     break;
                 case 3:
                     System.out.println("Calculando viaje...");
+                    break;
+                case 4:
+                    System.out.println("Cerrando Sistema");
+                    bucle = false;
+                    break;
                 default:
                     System.out.println("Opcion no valida");
                     break;
             }
-            break;
         }
         sc.close();
     }
