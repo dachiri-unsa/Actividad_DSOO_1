@@ -11,6 +11,7 @@ public class Ejercicio {
         while (bucle){
             System.out.println("Seleccione una opcion:\n1) Añadir vehiculo\n2) Añadir chofer\n3) Escoger viaje\n0) Cerrar");
             opcion = sc.nextInt();
+            sc.nextLine();
             switch (opcion) {
                 case 1:
                     lista_vehiculo.add(new Vehiculo(sc));
