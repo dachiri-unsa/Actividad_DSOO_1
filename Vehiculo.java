@@ -3,7 +3,7 @@ public class Vehiculo{
     private String placa;
     private int capacidad;
     private String combustible ;
-    private int consumoCombustible;
+    private double consumoCombustible;
 
     //contructor por defecto
     public Vehiculo(Scanner sc) {
@@ -15,7 +15,7 @@ public class Vehiculo{
         System.out.println("Ingresar el tipo de combustible del vehiculo: ");
         combustible = sc.nextLine();
         System.out.println("Ingresa el consumo de combustible por kilometro del vehiculo: ");
-        consumoCombustible = sc.nextInt();
+        consumoCombustible = sc.nextDouble();
         sc.nextLine();
     }
     public double calcularConsumo(double distanciaKm) {
@@ -39,10 +39,10 @@ public class Vehiculo{
     public String getCombustible () {
         return combustible;
     }
-    public void setconsumoCombustible (int consumoCombustible) {
+    public void setconsumoCombustible (double consumoCombustible) {
         this.consumoCombustible=consumoCombustible;
     }
-    public int getconsumoCombustible () {
+    public double getconsumoCombustible () {
         return consumoCombustible;
     }
 }
