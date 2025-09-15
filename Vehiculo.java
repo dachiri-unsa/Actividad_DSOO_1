@@ -3,27 +3,22 @@ public class Vehiculo{
     private String placa;
     private int capacidad;
     private String combustible ;
-    private int consubmoCombustible;
+    private int consumoCombustible;
 
     //contructor por defecto
     public Vehiculo() {
-        this.placa="none";
-        this.capacidad=0;
-        this.combustible="none";
-    }
-    public void setDatos(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingresar la placa: ");
+        System.out.println("Ingresar la placa del vehiculo: ");
         placa = sc.nextLine();
+        System.out.println("Ingresa la capacidad del vehiculo: ");
+        capacidad = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Ingresar el tipo de combustible del vehiculo: ");
+        combustible = sc.nextLine();
+        System.out.println("Ingresa el consumo de combustible por kilometro del vehiculo: ");
+        consumoCombustible = sc.nextInt();
+        sc.nextLine();
     }
-    //contrutor con parametros
-    /*
-    public Vehiculo(String placa , String combustible, int capacidad,int consubmoCombustible){
-        this.placa=placa;
-        this.combustible = combustible;
-        this.capacidad = capacidad;
-        this.consubmoCombustible = consubmoCombustible;
-    } */
     public void setplaca (String placa) {
         this.placa=placa;
     }
@@ -43,9 +38,9 @@ public class Vehiculo{
         return combustible;
     }
     public void setconsumoCombustible (int consumoCombustible) {
-        this.consubmoCombustible=consumoCombustible;
+        this.consumoCombustible=consumoCombustible;
     }
     public int getconsumoCombustible () {
-        return consubmoCombustible;
+        return consumoCombustible;
     }
 }
