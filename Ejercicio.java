@@ -1,9 +1,8 @@
 public class Ejercicio {
     public static void main(String[]args){
-        System.out.println("Esta es una prueba");
-        System.out.println("RUBIAS");
-        System.out.println("hola");
-        System.out.println("XD");
-        System.out.println("Solucion?");
+        while (true){
+            System.out.println("Bienvenido a la Sistema de vehiculos de transporte");
+            break;
+        }
     }
 }
