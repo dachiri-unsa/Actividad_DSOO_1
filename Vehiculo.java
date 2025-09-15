@@ -6,8 +6,7 @@ public class Vehiculo{
     private int consumoCombustible;
 
     //contructor por defecto
-    public Vehiculo() {
-        Scanner sc = new Scanner(System.in);
+    public Vehiculo(Scanner sc) {
         System.out.println("Ingresar la placa del vehiculo: ");
         placa = sc.nextLine();
         System.out.println("Ingresa la capacidad del vehiculo: ");
@@ -22,16 +21,16 @@ public class Vehiculo{
     public double calcularConsumo(double distanciaKm) {
         return distanciaKm * consumoCombustible;
     }
-    public void setplaca (String placa) {
+    public void setPlaca (String placa) {
         this.placa=placa;
     }
-    public String getplaca () {
+    public String getPlaca () {
         return placa;
     }
-    public void setcapacidad(int capacidad) {
+    public void setCapacidad(int capacidad) {
         this.capacidad=capacidad;
     }
-    public int getcapacidad() {
+    public int getCapacidad() {
         return  capacidad;
     }
     public void setCombustible(String combustible){

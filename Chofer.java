@@ -4,8 +4,7 @@ public class Chofer {
     private String nombre,licencia;
     private int edad, experiencia;
 
-    public Chofer() {
-        Scanner sc = new Scanner(System.in);
+    public Chofer(Scanner sc) {
         System.out.println("Ingresar el nombre del chofer: ");
         nombre = sc.nextLine();
         System.out.println("Ingresa la edad del chofer: ");
