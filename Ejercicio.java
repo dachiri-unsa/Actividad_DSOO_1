@@ -4,7 +4,7 @@ public class Ejercicio {
         Scanner sc = new Scanner(System.in);
         int opcion;
 
-        System.out.println("Bienvenido a la Sistema de vehiculos de transporte");
+        System.out.println("Bienvenido a la Sistema de vehiculos de transporte: ");
         while (true){
             System.out.println("Seleccione una opcion:\n1) Añadir vehiculo\n2) Añadir chofer\n3) Escoger viaje");
             opcion = sc.nextInt();
