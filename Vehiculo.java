@@ -19,6 +19,9 @@ public class Vehiculo{
         consumoCombustible = sc.nextInt();
         sc.nextLine();
     }
+    public double calcularConsumo(double distanciaKm) {
+        return distanciaKm * consumoCombustible;
+    }
     public void setplaca (String placa) {
         this.placa=placa;
     }

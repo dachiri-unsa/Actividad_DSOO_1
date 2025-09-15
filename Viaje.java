@@ -15,6 +15,42 @@ public class Viaje {
 
     }
     
+    private double distanciaKm;
+    private double velocidadPromedio; // km/h
+    private double precioCombustible; // por litro
+    private Vehiculo vehiculo;
+    private Chofer chofer;
+
+    public Viaje(double distanciaKm, double velocidadPromedio, double precioCombustible,
+                 Vehiculo vehiculo, Chofer chofer) {
+        this.distanciaKm = distanciaKm;
+        this.velocidadPromedio = velocidadPromedio;
+        this.precioCombustible = precioCombustible;
+        this.vehiculo = vehiculo;
+        this.chofer = chofer;
+    }
+
+    // Calcular duración (horas = distancia / velocidad)
+    public double calcularDuracion() {
+        return distanciaKm / velocidadPromedio;
+    }
+
+    // Calcular costo de combustible
+    public double calcularCosto() {
+        double litrosNecesarios = vehiculo.calcularConsumo(distanciaKm);
+        return litrosNecesarios * precioCombustible;
+    }
+
+    // Mostrar resumen del viaje
+    public void mostrarResumen() {
+        System.out.println("=== Resumen del Viaje ===");
+        System.out.println("Chofer: " + chofer.getNombre());
+        System.out.println("Vehículo: " + vehiculo.getPlaca());
+        System.out.println("Distancia: " + distanciaKm + " km");
+        System.out.println("Duración aproximada: " + calcularDuracion() + " horas");
+        System.out.println("Costo estimado: S/. " + calcularCosto());
+    }
+
     public void setDuracion(int dur) {
         duración=dur;
     }
