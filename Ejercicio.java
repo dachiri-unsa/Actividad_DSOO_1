@@ -11,6 +11,8 @@ public class Ejercicio {
             switch (opcion) {
                 case 1:
                     System.out.println("Añadiendo vehiculo...");
+                    ArrayList <Vehiculo> Lista_Autos =new ArrayList<Vehiculo>();
+                    
                     break;
                 case 2:
                     System.out.println("Añadiendo chofer...");
@@ -18,7 +20,7 @@ public class Ejercicio {
                 case 3:
                     System.out.println("Calculando viaje...");
                     break;
-                case 4:
+                case 0:
                     System.out.println("Cerrando Sistema");
                     bucle = false;
                     break;
