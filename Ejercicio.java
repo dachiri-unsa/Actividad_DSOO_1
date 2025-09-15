@@ -6,7 +6,7 @@ public class Ejercicio {
         boolean bucle = true;
         ArrayList<Vehiculo> lista_vehiculo = new ArrayList<Vehiculo>();
         ArrayList<Chofer> lista_chofer = new ArrayList<Chofer>();
-        System.out.println("Bienvenido a la Sistema de vehiculos de transporte");
+        System.out.println("Bienvenido a el Sistema de vehiculos de transporte");
         while (bucle){
             System.out.println("Seleccione una opcion:\n1) Añadir vehiculo\n2) Añadir chofer\n3) Escoger viaje\n0) Cerrar");
             opcion = sc.nextInt();
