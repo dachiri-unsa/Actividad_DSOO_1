@@ -6,14 +6,14 @@ public class Chofer {
 
     public Chofer() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingresar la placa del vehiculo: ");
+        System.out.println("Ingresar el nombre del chofer: ");
         nombre = sc.nextLine();
-        System.out.println("Ingresa la capacidad del vehiculo: ");
+        System.out.println("Ingresa la edad del chofer: ");
         edad = sc.nextInt();
         sc.nextLine();
-        System.out.println("Ingresar el tipo de combustible del vehiculo: ");
+        System.out.println("Ingresar el tipo de licencia del chofer: ");
         licencia = sc.nextLine();
-        System.out.println("Ingresa el consumo de combustible por kilometro del vehiculo: ");
+        System.out.println("Ingresa cantidad de años de experiencia del chofer: ");
         experiencia = sc.nextInt();
         sc.nextLine();
     }
