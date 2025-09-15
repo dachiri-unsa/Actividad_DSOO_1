@@ -4,11 +4,18 @@ public class Vehiculo{
     private String combustible ;
     private int consubmoCombustible;
 
-    //contructor por defencto
+    //contructor por defecto
     public Vehiculo() {
         this.placa="none";
         this.capacidad=0;
         this.combustible="none";
+    }
+    //contrutor con parametros
+    public Vehiculo(String placa , String combustible, int capacidad,int consubmoCombustible){
+        this.placa=placa;
+        this.combustible = combustible;
+        this.capacidad = capacidad;
+        this.consubmoCombustible = consubmoCombustible;
     }
     public void setplaca (String placa) {
         this.placa=placa;
